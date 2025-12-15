@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameWorld - Анимации</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h1>GameWorld</h1>
+                </div>
+                
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Поиск игр...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <nav class="nav-desktop">
+                        <a href="#" class="nav-link active"><i class="fas fa-home"></i> Главная</a>
+                        <a href="#" class="nav-link"><i class="fas fa-store"></i> Каталог</a>
+                        <a href="#" class="nav-link cart-link">
+                            <i class="fas fa-shopping-cart"></i> Корзина
+                            <span class="cart-badge">3</span>
+                        </a>
+                        <a href="#" class="nav-link btn-login"><i class="fas fa-user"></i> Войти</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Новый сезон игр уже здесь</h2>
+                    <p>Скидки до 60% на топовые игры для PC, PlayStation и Xbox</p>
+                    <a href="#" class="btn-hero pulse-animation">Смотреть новинки <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide active">
+                            <div class="slide-content">
+                                <h3>Cyberpunk 2077</h3>
+                                <p>-25% только сегодня</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h3>Elden Ring</h3>
+                                <p>Хит сезона</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h3>FIFA 24</h3>
+                                <p>Новая версия</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots">
+                            <button class="dot active"></button>
+                            <button class="dot"></button>
+                            <button class="dot"></button>
+                        </div>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="featured-games">
+                <h2 class="section-title"><i class="fas fa-star"></i> Рекомендуем</h2>
+                
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-badge spin-badge">-25%</div>
+                        <div class="game-image game1">
+                            <div class="game-overlay">
+                                <button class="btn-quick-view"><i class="fas fa-eye"></i> Быстрый просмотр</button>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">Cyberpunk 2077</h3>
+                            <p class="game-desc">Ролевая игра в киберпанк-мире будущего</p>
+                            <div class="game-platforms">
+                                <span class="platform"><i class="fab fa-windows"></i> PC</span>
+                                <span class="platform"><i class="fab fa-playstation"></i> PS5</span>
+                                <span class="platform"><i class="fab fa-xbox"></i> XBOX</span>
+                            </div>
+                            <div class="game-footer">
+                                <div class="game-price">
+                                    <span class="price-old">₽3,999</span>
+                                    <span class="price-current">₽2,999</span>
+                                </div>
+                                <button class="btn-buy add-to-cart"><i class="fas fa-cart-plus"></i> В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-badge hot bounce-badge">Хит</div>
+                        <div class="game-image game2">
+                            <div class="game-overlay">
+                                <button class="btn-quick-view"><i class="fas fa-eye"></i> Быстрый просмотр</button>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">Elden Ring</h3>
+                            <p class="game-desc">Фэнтези с открытым миром от создателей Dark Souls</p>
+                            <div class="game-platforms">
+                                <span class="platform"><i class="fab fa-windows"></i> PC</span>
+                                <span class="platform"><i class="fab fa-playstation"></i> PS5</span>
+                            </div>
+                            <div class="game-footer">
+                                <div class="game-price">
+                                    <span class="price-current">₽3,499</span>
+                                </div>
+                                <button class="btn-buy add-to-cart"><i class="fas fa-cart-plus"></i> В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-badge new">New</div>
+                        <div class="game-image game3">
+                            <div class="game-overlay">
+                                <button class="btn-quick-view"><i class="fas fa-eye"></i> Быстрый просмотр</button>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">FIFA 24</h3>
+                            <p class="game-desc">Футбольный симулятор с улучшенной графикой</p>
+                            <div class="game-platforms">
+                                <span class="platform"><i class="fab fa-playstation"></i> PS5</span>
+                                <span class="platform"><i class="fab fa-xbox"></i> XBOX</span>
+                            </div>
+                            <div class="game-footer">
+                                <div class="game-price">
+                                    <span class="price-current">₽2,499</span>
+                                </div>
+                                <button class="btn-buy add-to-cart"><i class="fas fa-cart-plus"></i> В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2 class="section-title"><i class="fas fa-check-circle"></i> Почему GameWorld?</h2>
+                <div class="features-grid">
+                    <div class="feature flip-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                                <h3>Мгновенная доставка</h3>
+                            </div>
+                            <div class="flip-back">
+                                <p>Ключи приходят сразу после оплаты</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature flip-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                                <h3>100% гарантия</h3>
+                            </div>
+                            <div class="flip-back">
+                                <p>Только лицензионные игры</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature flip-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="feature-icon"><i class="fas fa-money-bill-wave"></i></div>
+                                <h3>Лучшие цены</h3>
+                            </div>
+                            <div class="flip-back">
+                                <p>Дешевле, чем в Steam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature flip-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                                <h3>Поддержка 24/7</h3>
+                            </div>
+                            <div class="flip-back">
+                                <p>Поможем в любое время</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <div class="newsletter-content">
+                    <h3><i class="fas fa-envelope"></i> Подпишитесь на рассылку</h3>
+                    <p>Получайте первыми информацию о скидках и новинках</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" class="email-input">
+                        <button class="btn-submit">Подписаться <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <h3>GameWorld</h3>
+                    <p>Магазин игр с 2010 года. Более 50,000 довольных клиентов.</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Категории</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Экшены</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> RPG</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Стратегии</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Симуляторы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Доставка</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Оплата</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Гарантия</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-envelope"></i> support@gameworld.ru</p>
+                    <p><i class="fas fa-phone"></i> 8-800-555-35-35</p>
+                    <p><i class="fas fa-clock"></i> Круглосуточно</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GameWorld. Все права защищены.</p>
+                <p>Сделано с <i class="fas fa-heart heart-beat"></i> для геймеров</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="notification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="notification-text">Товар добавлен в корзину!</span>
+        </div>
+    </div>
+
+    <script>
+        // Слайдер
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.querySelector('.slider-prev');
+        const nextBtn = document.querySelector('.slider-next');
+        let currentSlide = 0;
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlide = n;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        
+        prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+        nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showSlide(index));
+        });
+        
+        setInterval(() => showSlide(currentSlide + 1), 5000);
+        
+        // Flip карточки
+        const flipCards = document.querySelectorAll('.flip-card');
+        flipCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.querySelector('.flip-inner').style.transform = 'rotateY(180deg)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.querySelector('.flip-inner').style.transform = 'rotateY(0deg)';
+            });
+        });
+        
+        // Добавление в корзину
+        const buyButtons = document.querySelectorAll('.add-to-cart');
+        const cartBadge = document.querySelector('.cart-badge');
+        const notification = document.querySelector('.notification');
+        
+        buyButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                let count = parseInt(cartBadge.textContent);
+                count++;
+                cartBadge.textContent = count;
+                
+                // Анимация бейджа
+                cartBadge.classList.add('bounce');
+                setTimeout(() => {
+                    cartBadge.classList.remove('bounce');
+                }, 300);
+                
+                // Анимация кнопки
+                this.innerHTML = '<i class="fas fa-check"></i> Добавлено';
+                this.style.background = '#27ae60';
+                
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-cart-plus"></i> В корзину';
+                    this.style.background = '';
+                }, 2000);
+                
+                // Уведомление
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 3000);
+            });
+        });
+        
+        // Быстрый просмотр
+        const quickViewBtns = document.querySelectorAll('.btn-quick-view');
+        quickViewBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const gameCard = this.closest('.game-card');
+                gameCard.classList.toggle('quick-view');
+            });
+        });
+        
+        // Форма подписки
+        const subscribeBtn = document.querySelector('.btn-submit');
+        const emailInput = document.querySelector('.email-input');
+        
+        subscribeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (emailInput.value) {
+                this.innerHTML = '<i class="fas fa-check"></i> Подписано!';
+                this.style.background = '#27ae60';
+                
+                setTimeout(() => {
+                    this.innerHTML = 'Подписаться <i class="fas fa-paper-plane"></i>';
+                    this.style.background = '';
+                    emailInput.value = '';
+                }, 3000);
+            }
+        });
+        
+        // Меню на мобильных
+        const menuToggle = document.querySelector('.menu-toggle');
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
